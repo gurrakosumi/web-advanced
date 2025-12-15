@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+nav a {
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #e67e22;
+}
+
+/* Hero Section */
+.hero {
+  height: 85vh;
+  background: url('download.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.btn {
+  padding: 12px 32px;
+  background: #e67e22;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ca661d;
+  transform: scale(1.05);
+}
+
+/* Shop */
+.shop {
+  padding: 60px 20px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.shop h2 {
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+}
+
+/* Products */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 35px;
+}
+
+.product {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-8px);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin: 15px 0 8px;
+  font-size: 1.2rem;
+}
+
+.price {
+  color: #e67e22;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.btn-product {
+  width: 100%;
+  padding: 10px;
+  background: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-product:hover {
+  background: #005fa3;
+  transform: scale(1.03);
+}
