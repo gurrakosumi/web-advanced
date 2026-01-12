@@ -1,0 +1,120 @@
+
+<link rel="stylesheet" href="style.css">
+{marging: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* --------------------------------------
+    HEADER
+  ------------------------------------*/
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+  }  
+
+  .logo {
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #e67e22;
+  }
+
+  /* ---------------------------------------------
+       HERO SECTION
+       --------------------------------------*/
+    .hero {
+        background: url('download.jpg') center/cover no-repeat;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+    }
+
+    .hero-content { grid-template-columns: ;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 40px;
+        border-radius: 8px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        background-color: #e67e22;
+        color: #fff;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-weight: 600;
+        transtion: background 0.3s ease;
+
+    }
+    /* SHOP SECTION */
+    .shop {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    .shop h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #222;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .product {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product h3 {
+      margin: 15px 0 5px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .product p {
+      font-size: 1.1rem;
+      color: #0078D7;
+      font-weight: bold;
+    }
+
+    .product button:hover {
+      background-color: #005fa3;
+    }

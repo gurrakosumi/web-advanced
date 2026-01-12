@@ -1,0 +1,30 @@
+@media(min-width: 600px){
+    body{
+        background-color: #70343e;
+        color: white;
+    }
+}
+@media all and (max-width: 600px){
+    body{
+        background-color: #a8a0a1;
+        color: black;
+    }
+}
+@media all and (orientation: landscape){
+h1{
+    font-size: 80px;
+}
+}
+@media all and (orienation:portrait){
+    h1{
+
+    }
+}
+h1{
+    border: 2px solid white;
+}
+@media (mid-width: 600px) and (max-width: 980px) {
+    img{
+        display: none;
+    }
+}
